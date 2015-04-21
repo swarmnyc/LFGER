@@ -13,12 +13,33 @@ require_once('config.php');
 require_once('functions.php');
 /* Get user access tokens out of the session. */
 
+
+$cameFromUrl = false;
+$game = "";
 /* Create a TwitterOauth object with consumer/user tokens. */
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['status'])) {
-    $status = $_POST['status'];
-    $postStatus = $connection->post('statuses/update',array('status' => $status));
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //$status = $_POST['status'];
+    //print_r($_POST);
+    $theTime = time();
+    $letters = range('a','z');
+    $splitTime = str_split($theTime);
+    $theTime = "";
+    for ($i = 0; $i<count($splitTime); $i++) {
+        $theTime .=  $letters[$splitTime[$i]];
+    }
+
+    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . " http://localhost.com/?region=" . urlencode($_POST['region']). "&platform=" . $_POST['platform'] . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']);
+    echo $tweet;
+    $postStatus = $connection->post('statuses/update',array('status' => $tweet));
+} else if ($_SERVER['REQUEST_METHOD'] == "GET") {
+    print_r($_GET);
+    if (count($_GET)>0) {
+        $cameFromUrl=true;
+        $game = $_GET;
+    }
+
 }
 ?>
 
@@ -32,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['status'])) {
     
 	  <!-- TWITTER PULL SCRIPT GOES HERE TO EDIT WHAT ACCOUNT TWEETS PULL FROM EDIT "pullme.php'-->
 	  <?php include_once('pullme.php') ?>
-	  
+
 	  <style type="text/css">
         .stage {
             position: absolute;
@@ -103,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['status'])) {
        <!-- START MAIN CTA AREA -->
 	  <div class="contain-main">
 	  	<div class="logo" id="idxLogo">
-		  	<a href="http://swarmnyc.com"><img src="img/logo.jpg" alt="SWARM NYC" id="SWARMNYC" width="300px;"></a><br>
+            		  	<a href="http://swarmnyc.com"><img src="img/logo.jpg" alt="SWARM NYC" id="SWARMNYC" width="300px;"></a><br>
 		  	<span class="logo-desc pinkish">Tweet anonymously from <a class="whitey" href="http://twitter.com/SWARMsecret" target="_blank">@SWARMsecret</a> to anyone you want to.<br> </span>
 		</div>
     
@@ -112,8 +133,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['status'])) {
     
 	  	<!-- BEGIN TWEET FORM -->
   			<div class="clearfix" id="thankPageTweetForm">
-  				<textarea maxlength="140" name="status" rows="3" placeholder="Tweet anonymously at anyone from @SWARMsecret. - i.e. Hey @WhiteHouse, we want free ice cream for everyone!!!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tweet anonymously at anyone from @SWARMsecret. - i.e. Hey @WhiteHouse, we want free ice cream for everyone!!!'"></textarea>
-  				<button type="submit" class="btn btn-default pull-right righton" id="thankPageTweetSubmit">TWEET</button>	
+                <?php include_once('form.php') ?>
+
+
+
   			</div>
   
 		<!-- BEGIN TWEETS -->
@@ -121,7 +144,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['status'])) {
 			<div class="half-spacer"></div>
 			
 			<div id="refresh">
-				<div id="tweets"></div>
+				<div id="tweets">
+                    <ul>
+
+                        <?php if ($cameFromUrl) {
+
+                            displayGame($game, false);
+                        } ?>
+
+                        <?php for ($i = 0; $i<count($statuses); $i++) {
+                            displayGame($statuses[$i]);
+                        } ?>
+                    </ul>
+                </div>
 			</div>
       </div>
 	  </div>
@@ -144,8 +179,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['status'])) {
     
     <!-- THIS SCRIPT INSERST ANY ADDITIONAL TEXT YOU MAY WANT IN YOUR TWEET, CHANGE WHAT YOU WANT IN THE STATUS FIELD WITHIN kickback.php-->
     <?php include_once('kickback.php') ?>
-    
-<script>
+
+
+
+        <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

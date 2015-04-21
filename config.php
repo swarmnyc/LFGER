@@ -5,11 +5,14 @@
  *
  */
 
-define('ACCESS_TOKEN', 'your access token number');
-define('ACCESS_TOKEN_SECRET', 'your token secret number');
+define('ACCESS_TOKEN', '3191238465-16tqWpX2pcUQ8f8ktZF1hnopnNlGNUvZ5HvUYv2');
+define('ACCESS_TOKEN_SECRET', 'rkiyzH5UhcGG8jBh4oA9kUazqfMZ9F8DCYOVnptnBDexy');
 define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
 
-define('CONSUMER_KEY', 'your consumer key');
-define('CONSUMER_SECRET', 'your consumer secret');
+define('CONSUMER_KEY', 'z4THozh9NYI2HDKeVfd2VaxxT');
+define('CONSUMER_SECRET', 'P1jEbajHYQiHDvrCaKM2VFQ0zMX4eyRQhFNuFpFUmjqrrrW6kt');
+
+//twitter username LFG3r
+//twitter password inDustWeTrust~
 
 ?>

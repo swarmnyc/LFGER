@@ -28,16 +28,16 @@ input[type=texatarea] {resize: none;font-color: #fff; background-color: #171717;
 
 /* TWITTER STYLE */
 .user, .tweet, .timePosted {
-  float:left;
+    float:left;
 }
 
 .wrapitup {border-left: 10px solid #eaa59e; border-right: 10px solid #eaa59e;border-top: 10px solid #eaa59e; padding: 40px; margin-top: 20px; background-color: #fcf5e6; -webkit-border-top-left-radius: 20px;
--webkit-border-top-right-radius: 20px;
--moz-border-radius-topleft: 20px;
--moz-border-radius-topright: 20px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;margin: 0 auto;
-max-width: 720px;}
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;margin: 0 auto;
+    max-width: 1000px;}
 ul {list-style-type: none}
 li {margin-bottom: 10px;}
 
@@ -51,9 +51,12 @@ li {margin-bottom: 10px;}
 .interact {float:left;width:0%;margin-top:-7px;visibility: hidden;display: none;}
 .interact a {margin-left:0px;float:left;display:none;}
 .user a > span {margin-left:10px;display:none;}
-#linkage {position:fixed;top:0px;right:0px;background-color:#3d3d3d;color:#ffffff;text-decoration:none;padding:5px;width:10%;font-family:arial;} 
+#linkage {position:fixed;top:0px;right:0px;background-color:#3d3d3d;color:#ffffff;text-decoration:none;padding:5px;width:10%;font-family:arial;}
 
 /*FOOTER*/
 .footer{background-color: #eaa59e; height: 40px; width: 100%; max-width:720px; padding: 5px; margin: 0 auto;}
 .swarm{text-align: center; color: #ccc; font-family: 'Avenir Next', sans-serif; color:#fcf5e6; padding-top: 5px; }
 
+#tweets h3 {
+    display: inline;
+}

@@ -2,7 +2,7 @@
     
     <script type="text/javascript">
       jQuery(document).ready(function($) {
-        $('#thankPageTweetSubmit').click(function(event) {
+        $('#submitGame').submit(function(event) {
           var status = $("#thankPageTweetForm textarea").val();
           status += 'by @swarmnyc';
           $.ajax({
