@@ -67,12 +67,5 @@ function displayGame($tweet, $isTweet = true) {
 
 
 
-function makeTweet() {
-
-    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . " http://localhost.com/?region=" . urlencode($_POST['region']). "&platform=" . $_POST['platform'] . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']);
-    $postStatus = $connection->post('statuses/update',array('status' => $tweet));
-}
-
-
 
  ?>
