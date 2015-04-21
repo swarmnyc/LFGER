@@ -37,23 +37,7 @@ function displayGame($tweet, $isTweet = true) {
 
     $platform = $query['platform'];
 
-    switch($platform) {
 
-        case "xbox360":
-            $platform = "XBOX 360";
-            break;
-        case "xbox1":
-            $platform = "XBOX One";
-            break;
-        case "ps3":
-            $platform = "PS3";
-            break;
-        case "ps4":
-            $platform = "PS4";
-            break;
-
-
-    }
 
 
 

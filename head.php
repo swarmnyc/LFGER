@@ -5,7 +5,7 @@
     <meta name="author" content="">
     
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
 
     <title>SWARM BOT 5000</title>
 	<meta name="title" content="SWARM BOT 5000 | TWEET ANONYMOUSLY AT PEOPLE" />
@@ -19,13 +19,13 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="../fonts/fonts.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
-    <link href="css/cover.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="../css/cover.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
 
 	<!--  Mobile Viewport
 	http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
