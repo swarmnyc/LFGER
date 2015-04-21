@@ -20,21 +20,10 @@ $game = "";
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //$status = $_POST['status'];
-    //print_r($_POST);
-    $theTime = time();
-    $letters = range('a','z');
-    $splitTime = str_split($theTime);
-    $theTime = "";
-    for ($i = 0; $i<count($splitTime); $i++) {
-        $theTime .=  $letters[$splitTime[$i]];
-    }
+   makeTweet();
 
-    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . " http://localhost.com/?region=" . urlencode($_POST['region']). "&platform=" . $_POST['platform'] . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']);
-    echo $tweet;
-    $postStatus = $connection->post('statuses/update',array('status' => $tweet));
 } else if ($_SERVER['REQUEST_METHOD'] == "GET") {
-    print_r($_GET);
+
     if (count($_GET)>0) {
         $cameFromUrl=true;
         $game = $_GET;
@@ -146,6 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			<div id="refresh">
 				<div id="tweets">
                     <ul>
+
 
                         <?php if ($cameFromUrl) {
 
