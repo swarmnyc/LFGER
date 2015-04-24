@@ -31,21 +31,56 @@ function displayGame($tweet, $isTweet = true) {
     } else {
 
         $query = $tweet;
-        $featured = "featured";
+
+
+
+        $featured = " featured";
     }
 
 
     $platform = $query['platform'];
 
+    echo '<div class="gameRequest' . $featured . '"">';
+
+    echo '<div class="fourth">';
+    echo  $query['platform'];
+    echo '</div>';
+
+    echo '<div class="fourth">';
+    echo  $query['gamertag'];
+    echo '</div>';
+
+    echo '<div class="fourth">';
+    echo  $query['region'];
+    echo '</div>';
+
+    echo '<div class="fourth">';
+    echo  $query['level'];
+    echo '</div>';
+
+
+
+    echo '<div class="full">';
+    echo  $query['event'];
+    echo '</div>';
 
 
 
 
-    echo '<li class="' . $featured . '"><p class="tweet">';
-    echo '<h3>' . $query['gamertag'] . '</h3> is looking for people to play ' . $query['event'] . ' with on ' . $platform . ".";
-    echo 'They are level ' . $query['level'] . " and located in " . $query['region'] . "</br>";
+    echo '<div class="full">';
     echo $query['notes'];
-    echo '</p></li>';
+    echo '</div>';
+
+
+    echo '</div>'; //close gameRequst
+
+//
+//
+//    echo '<li class="' . $featured . '"><p class="tweet">';
+//    echo '<h3>' . $query['gamertag'] . '</h3> is looking for people to play ' . $query['event'] . ' with on ' . $platform . ".";
+//    echo 'They are level ' . $query['level'] . " and located in " . $query['region'] . "</br>";
+//    echo $query['notes'];
+//    echo '</p></li>';
 
 }
 

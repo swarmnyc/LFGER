@@ -31,13 +31,13 @@ input[type=texatarea] {resize: none;font-color: #fff; background-color: #171717;
     float:left;
 }
 
-.wrapitup {border-left: 10px solid #eaa59e; border-right: 10px solid #eaa59e;border-top: 10px solid #eaa59e; padding: 40px; margin-top: 20px; background-color: #fcf5e6; -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-topright: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;margin: 0 auto;
-    max-width: 1000px;}
+.wrapitup { margin-top: 20px; background-color: rgba(0,0,0,.7);
+
+
+
+
+    margin: 0 auto;
+    max-width: 1000px; color: white; border-radius: 3px 3px 15px 15px;}
 ul {list-style-type: none}
 li {margin-bottom: 10px;}
 
@@ -54,8 +54,8 @@ li {margin-bottom: 10px;}
 #linkage {position:fixed;top:0px;right:0px;background-color:#3d3d3d;color:#ffffff;text-decoration:none;padding:5px;width:10%;font-family:arial;}
 
 /*FOOTER*/
-.footer{background-color: #eaa59e; height: 40px; width: 100%; max-width:720px; padding: 5px; margin: 0 auto;}
-.swarm{text-align: center; color: #ccc; font-family: 'Avenir Next', sans-serif; color:#fcf5e6; padding-top: 5px; }
+.footer{ height: 40px; width: 100%; max-width:720px; padding: 5px; margin: 0 auto; margin-top: 25px; margin-bottom: 65%;}
+.swarm{text-align: center; color: #ccc; font-family: 'Avenir Next', sans-serif; color: white; padding-top: 5px; }
 
 #tweets h3 {
     display: inline;

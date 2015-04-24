@@ -20,7 +20,7 @@ $game = "";
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . CURRENT_PAGE . "?region=" . urlencode($_POST['region']). "&platform=" . urlencode($_POST['platform']) . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']);
+    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . CURRENT_PAGE . "?region=" . urlencode($_POST['region']). "&platform=" . urlencode($_POST['platform']) . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']) . "&time=" . urlencode(time());
     $postStatus = $connection->post('statuses/update',array('status' => $tweet));
     // print_r($postStatus);
 
@@ -68,99 +68,114 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#far-clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 30});
-            $('#near-clouds').pan({fps: 30, speed: 1, dir: 'left', depth: 70});
 
-            window.actions = {
-                speedyClouds: function(){
-                    $('#far-clouds').spSpeed(12);
-                    $('#near-clouds').spSpeed(20);
-                },
-                runningClouds: function(){
-                    $('#far-clouds').spSpeed(8);
-                    $('#near-clouds').spSpeed(12);
-                },
-                walkingClouds: function(){
-                    $('#far-clouds').spSpeed(3);
-                    $('#near-clouds').spSpeed(5);
-                },
-                lazyClouds: function(){
-                    $('#far-clouds').spSpeed(0.7);
-                    $('#near-clouds').spSpeed(1);
-                },
-                stop: function(){
-                    $('#far-clouds, #near-clouds').spStop();
-                },
-                start: function(){
-                    $('#far-clouds, #near-clouds').spStart();
-                },
-                toggle: function(){
-                    $('#far-clouds, #near-clouds').spToggle();
-                },
-                left: function(){
-                    $('#far-clouds, #near-clouds').spChangeDir('left');
-                },
-                right: function(){
-                    $('#far-clouds, #near-clouds').spChangeDir('right');
-                }
-            };
+
+            $("#regionSelector .regionChoices").click(function() {
+
+
+                console.log($(this).html());
+                console.log($(this));
+                $("#regionSelector .regionChoices").val($(this).html());
+
+                $("#regionSelector .selected").removeClass("selected");
+                $(this).addClass("selected");
+                var selected = $(this);
+                $("#regionForm").val($(this).html());
+
+
+            });
+
+
+            $("#platformSelector .platformChoices").click(function() {
+
+                $("#platformSelector .platformChoices").val($(this).html());
+
+                $("#platformSelector .selected").removeClass("selected");
+                $(this).addClass("selected");
+                var selected = $(this);
+                $("#platformForm").val($(this).html());
+
+
+            });
+
+
+
+
+
+
         });
+
+
+
+
     </script>
 
 </head>
 
 <body id="#">
-<div class="container">
+<div id="container" style="background: url(../img/dotaBig.jpg) center center fixed no-repeat; background-size: cover;">
+    <div class="container">
 
-    <!-- START MAIN CTA AREA -->
-    <div class="contain-main">
-        <div class="logo" id="idxLogo">
-        <h1><?php echo GAMENAME; ?></h1>
-        </div>
-
-        <div class="wrapitup">
-            <div class="spacer"></div>
-
-            <!-- BEGIN TWEET FORM -->
-            <div class="clearfix" id="thankPageTweetForm">
-                <?php include_once('form.php') ?>
-
-
-
+        <!-- START MAIN CTA AREA -->
+        <div class="contain-main">
+            <div class="logo" id="idxLogo">
+                <img src="../img/logo.png" alt="LFGER" class="logo"/><img src="<?php echo GAMEIMG; ?>" alt="<?php echo GAMENAME; ?>" class="gameLogo"/>
             </div>
+            <?php include_once('form.php') ?>
+            <div class="wrapitup">
+                <div class="spacer"></div>
 
-            <!-- BEGIN TWEETS -->
-            <div class="spacer"></div>
-            <div class="half-spacer"></div>
-
-            <div id="refresh">
-                <div id="tweets">
-                    <ul>
+                <!-- BEGIN TWEET FORM -->
+                <div class="clearfix" id="thankPageTweetForm">
 
 
-                        <?php if ($cameFromUrl) {
 
-                            displayGame($game, false);
-                        } ?>
 
-                        <?php for ($i = 0; $i<count($statuses); $i++) {
-                            displayGame($statuses[$i]);
-                        } ?>
-                    </ul>
+
+                </div>
+
+                <!-- BEGIN TWEETS -->
+
+
+                <div id="refresh">
+                    <div id="tweets">
+                        <ul>
+                            <h2>Looking For Group</h2>
+
+                            <div class="gameRequest bold">
+                                <div class="fifth">Platform</div>
+                                <div class="fifth">Gamertag</div>
+                                <div class="fifth">Level</div>
+                                <div class="fifth">Event</div>
+                                <div class="fifth">Location</div>
+                            </div>
+
+
+                            <?php if ($cameFromUrl) {
+
+                                displayGame($game, false);
+                            } ?>
+
+                            <?php for ($i = 0; $i<count($statuses); $i++) {
+                                displayGame($statuses[$i]);
+                            } ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="far-clouds" class="far-clouds stage"></div>
-    <div id="near-clouds" class="near-clouds stage"></div>
+        <div id="far-clouds" class="far-clouds stage"></div>
+        <div id="near-clouds" class="near-clouds stage"></div>
 
-    <!-- START FOOTER -->
-    <div class="footer">
-        <div class="swarm">Made by <a class="whitey" href="http://swarmnyc.com" target="_blank">SWARM</a> | See other <a class="whitey" href="http://swarmnyc.com/experiments">Experiments</a> | Or grab the code at <a class="whitey" href="http://github.com/swarmnyc">GitHub</a> | <a class="whitey" href="tos.html" target="_blank">Terms of Service </a>
+        <!-- START FOOTER -->
+        <div class="footer">
+            <div class="swarm">Made by <a class="whitey" href="http://swarmnyc.com" target="_blank">SWARM</a> | See other <a class="whitey" href="http://swarmnyc.com/experiments">Experiments</a> | Or grab the code at <a class="whitey" href="http://github.com/swarmnyc">GitHub</a> | <a class="whitey" href="tos.html" target="_blank">Terms of Service </a>
+            </div>
+
         </div>
-    </div>
 
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

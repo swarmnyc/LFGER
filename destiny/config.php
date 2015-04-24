@@ -14,6 +14,7 @@ define('CONSUMER_SECRET', 'bZ2jAdsi7MlegQ9xDS7UWWWVVBGEPQNvjkISPxNhvJukCv1qNo');
 
 define('CURRENT_PAGE', 'http://lpger.net/destiny');
 define('GAMENAME', 'Destiny');
+define('GAMEIMG', '../img/destiny.png');
 //twitter username LFGERDestiny
 //email l.fgertwitter@gmail.com
 //twitter password inDustWeTrust~

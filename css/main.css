@@ -1,4 +1,4 @@
-body{background-color: #e6522e;}
+body{background-color: 4a4e67;}
 #thankPageBody{background-image: url(../img/background-whispers.jpg);background-repeat: repeat-y;background-position: top left;background-size: 100% auto;background-attachment: fixed;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -97,7 +97,7 @@ button:focus {
     background:        linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
 }
 #tweets ul{
-    padding-left: 20px;
+    padding-left: 0px;
 }
 #thankPageBody #tweets ul{
     padding-left: 0;
@@ -118,42 +118,6 @@ button:focus {
     position: absolute;
     left: 0;
     top: 0;
-}
-#tweets ul li:last-child{
-    margin-bottom: 40px;
-}
-#tweets ul li:nth-child(11n+1):after{
-    background-image: url(../img/icon1.jpg);
-}
-#tweets ul li:nth-child(11n+2):after{
-    background-image: url(../img/icon6.jpg);
-}
-#tweets ul li:nth-child(11n+3):after{
-    background-image: url(../img/icon4.jpg);
-}
-#tweets ul li:nth-child(11n+4):after{
-    background-image: url(../img/icon2.jpg);
-}
-#tweets ul li:nth-child(11n+5):after{
-    background-image: url(../img/icon5.jpg);
-}
-#tweets ul li:nth-child(11n+6):after{
-    background-image: url(../img/icon8.jpg);
-}
-#tweets ul li:nth-child(11n+7):after{
-    background-image: url(../img/icon3.jpg);
-}
-#tweets ul li:nth-child(11n+8):after{
-    background-image: url(../img/icon7.jpg);
-}
-#tweets ul li:nth-child(11n+9):after{
-    background-image: url(../img/icon9.jpg);
-}
-#tweets ul li:nth-child(11n+10):after{
-    background-image: url(../img/icon10.jpg);
-}
-#tweets ul li:nth-child(11n+11):after{
-    background-image: url(../img/icon11.jpg);
 }
 
 
@@ -271,4 +235,802 @@ li.featured:after {
     height: 96px!important;
 }
 
+.fifth {
+    float: left;
+    width: 18%;
+    text-align: left;
+    margin: 2px;
+    padding: 1%;
+}
 
+.gameRequest {
+    width: 100%;
+    min-height: 160px;
+    display: inline-block;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.full {
+    width: 45%;
+    float: left;
+    text-align: left;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+form div {
+    float: left;
+    text-align: left;
+    margin-left: 1%;
+}
+
+img.logo {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+}
+
+img.gameLogo {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+}
+
+
+select#regionForm {
+    display: none;
+}
+
+div#regionSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.regionChoices {
+    height: 30px;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+}
+
+div#regionButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+.regionChoices.selected {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.regionChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+
+select#platformForm {
+    display: none;
+}
+
+div#platformSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.platformChoices {
+    height: 30px;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+}
+
+div#platformButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.platformChoices.selected {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.platformChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+.regionForm {
+    width: 31%;
+}
+
+.platformForm {
+    width: 31%;
+}
+
+#platformForm {}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: rgba(0,0,0,0);
+    border: rgba(255,255,255,.2) solid 1px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 17px;
+}
+
+form.form-horizontal {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 590px;
+    background-color: rgba(0,0,0,.7);
+    margin-bottom: 28px;
+    color: white;
+    padding: 40px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px 15px 3px 3px;
+}
+
+div#gamertagButton {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.gamertagForm {
+    width: 31%;
+}
+
+input {
+    width: 90%;
+    transition: all .4s;
+}
+
+h2 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 26px;
+    padding-left: 15px;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm {
+    float: right;
+    width: 20%;
+    clear: both;
+    margin-right: 9%;
+}
+
+.evenForm {
+    width: 100%;
+}
+
+.notesForm {
+    width: 100%;
+}
+
+div#eventLocator {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.gameRequest.featured {
+    background-color: rgba(255,255,255,.2);
+    margin-top: -5px;
+    border-width: 5px;
+    border-top: rgba(255,255,255,.4) solid 5px;
+}
+
+.half {
+    width: 40%;
+    margin-right: 7%;
+}
+
+.half input {
+    width: 60%;
+    margin-right: 70%;
+}
+
+.levelSubForm {}
+
+.half .regionChoices {
+    width: 70%;
+}
+
+.fourth {
+    width: 13%;
+    float: left;
+    text-align: left;   margin: 2px;   padding: 1%;
+    height: 160px;
+}body{background-color: 4a4e67;}
+#thankPageBody{background-image: url(../img/background-whispers.jpg);background-repeat: repeat-y;background-position: top left;background-size: 100% auto;background-attachment: fixed;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    opacity: .8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  .8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  .8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/**********************************
+		INDEX PAGE STYLE
+***********************************/
+#emailSubmitWrapper{
+    margin: 0;
+    width: 500px;
+}
+#emailSubmitWrapper .form-inline{
+    margin-bottom: 40px;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.logo .logo-text{
+    font-size:20px;
+    font-family: 'Avenir Next', sans-serif;
+    color: #fcf5e6;
+    text-align: center;
+    margin-bottom: -30px;
+}
+.logo .logo-desc{
+    font-size: 13px;
+    font-family: 'Avenir Next', sans-serif;
+    text-align: center;
+    color: #fcf5e6;
+}
+
+.whitey {color: #fff; font-weight: bold; text-transform: uppercase; text-decoration: underline;}
+
+#fieldEmail{
+    width: 356px;
+    font-size: 17px;
+    color: white;
+    float: left;
+    font-family: 'Avenir Next', sans-serif;
+}
+#emailSubmitForm button[type="submit"]{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 14px;
+    width: 120px;
+}
+.index-intro{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+#idxSneekPeek{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 15px;
+}
+#tweets{
+    width: 100%;
+    position: relative;
+    padding-bottom: 1px;
+    margin-bottom: -20px;
+}
+#idxBody #tweets:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    /*linear-gradient*/
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(0,0,0,0),0.25),color-stop(rgba(0, 0, 0, 0),0.31),color-stop(rgba(0, 0, 0, 1),0.94),color-stop(rgba(0, 0, 0, 0),1));
+    /*@@prefixmycss->No equivalent*/
+    background:-webkit-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:   -moz-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:     -o-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:        linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+}
+#tweets ul{
+    padding-left: 0px;
+}
+#thankPageBody #tweets ul{
+    padding-left: 0;
+}
+#tweets ul li{
+    padding-left: 120px;
+    position: relative;
+    min-height: 100px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#tweets ul li:after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+}
+.contain-main{
+    width: 600px;
+    z-index: 9999;
+}
+.contain-main2{
+    width: 500px; margin: 0 auto;
+}
+#thankPageTweetForm textarea{
+    font-family: 'Avenir Next', sans-serif;
+    background: #eaa59e;
+    border: 1px solid #eaa59e;
+    width: 100%;
+    padding: 20px;
+    color: #fcf5e6;
+    font-size: 16px;
+    resize: none;
+    float: left;
+    width: 71%;
+    height: 100px;
+    padding-top: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#thankPageTweetForm button[type="submit"]{
+    font-family: 'Avenir Next',sans-serif;
+    width: 120px;
+    height: 100px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+}
+.tweet{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+@media (max-width: 499px) {
+    .container {margin-right: auto;margin-left: auto;}
+
+    #emailSubmitWrapper{
+        width: 320px;
+    }
+    #thankPageBody .contain-main{
+        width: 320px;
+    }
+    #thankPageTweetForm textarea{
+        font-family: 'Avenir Next', sans-serif;
+        background: #eaa59e;
+        border: 1px solid #eaa59e;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        resize: none;
+        float: left;
+        height: 100px;
+        padding-top: 15px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;}
+    .righton {float: right; margin-top: 10px;}
+    .footer {display: none;}
+    .wrapitup {border-left: 0px solid #eaa59e; border-right: 0px solid #eaa59e;border-top: 0px solid #eaa59e; padding: 00px; margin-top: 20px;}
+
+    .logo .logo-text{
+        font-size:20px;
+        font-family: 'Avenir Next', sans-serif;
+        color: #fcf5e6;
+        text-align: center;
+        margin-bottom: 10px;}
+
+    .spacer {height: 20px;}
+    #tweets ul li {
+        padding-left: 120px;
+        position: relative;
+        min-height: 100px;
+        font-size: 17px;
+        margin-bottom: 20px;}
+
+    #thankPageTweetForm button[type="submit"]{
+        font-family: 'Avenir Next',sans-serif;
+        width: 120px;
+        height: 60px;
+        margin-right: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;}
+
+    .footer{background-color: #eaa59e; height: 40px; width: 100%; max-width:720px; padding: 5px; margin: 0 auto;}
+    .swarm{text-align: center; color: #ccc; font-family: 'Avenir Next', sans-serif; color:#fcf5e6; padding-top: 5px; }
+
+
+}
+
+
+li.featured {
+    border: black solid 3px;
+    box-shadow: black 1px 1px 10px;
+}
+
+li.featured:after {
+}
+
+.featured .tweet:after {}
+
+li.featured:after {
+    height: 96px!important;
+}
+
+.fifth {
+    float: left;
+    width: 18%;
+    text-align: left;
+    margin: 2px;
+    padding: 1%;
+}
+
+.gameRequest {
+    width: 100%;
+    min-height: 160px;
+    display: inline-block;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.full {
+    width: 45%;
+    float: left;
+    text-align: left;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-bottom: rgba(255,255,255,.05) solid 3px;
+}
+
+form div {
+    float: left;
+    text-align: left;
+    margin-left: 1%;
+}
+
+img.logo {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+}
+
+img.gameLogo {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+}
+
+
+select#regionForm {
+    display: none;
+}
+
+div#regionSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.regionChoices {
+    height: 30px;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+}
+
+div#regionButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+.regionChoices.selected {
+    color: white;
+    background-color: rgba(255,255,255,.4);
+    text-align: center;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.regionChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+
+select#platformForm {
+    display: none;
+}
+
+div#platformSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.platformChoices {
+    height: 30px;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+}
+
+div#platformButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.platformChoices.selected {
+    color: white;
+    background-color: rgba(255,255,255,.4);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.platformChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+.regionForm {
+    width: 31%;
+}
+
+.platformForm {
+    width: 31%;
+}
+
+#platformForm {}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: rgba(0,0,0,0);
+    border: rgba(255,255,255,.2) solid 1px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 17px;
+}
+
+form.form-horizontal {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 590px;
+    background-color: rgba(0,0,0,.7);
+    margin-bottom: 28px;
+    color: white;
+    padding: 40px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px 15px 3px 3px;
+}
+
+div#gamertagButton {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.gamertagForm {
+    width: 31%;
+}
+
+input {
+    width: 90%;
+    transition: all .4s;
+}
+
+h2 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 26px;
+    padding-left: 15px;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm {
+    float: right;
+    width: 20%;
+    clear: both;
+    margin-right: 9%;
+    background-color: rgba(255,255,255,.25);
+}
+
+.evenForm {
+    width: 100%;
+}
+
+.notesForm {
+    width: 100%;
+}
+
+div#eventLocator {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.gameRequest.featured {
+    background-color: rgba(255,255,255,.3);
+    margin-top: -5px;
+    border-width: 5px;
+    border-top: rgba(255,255,255,.4) solid 5px;
+}
+
+.half {
+    width: 40%;
+    margin-right: 7%;
+}
+
+.half input {
+    width: 60%;
+    margin-right: 70%;
+}
+
+.levelSubForm {}
+
+.half .regionChoices {
+    width: 70%;
+}
+
+.fourth {
+    width: 13%;
+    float: left;
+    text-align: left;   margin: 2px;   padding: 1%;
+    height: 160px;
+}
+
+.gameRequest.bold {
+    min-height: 0px;
+    height: 59px;
+}

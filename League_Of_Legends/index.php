@@ -20,7 +20,7 @@ $game = "";
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . CURRENT_PAGE . "?region=" . urlencode($_POST['region']). "&platform=" . urlencode($_POST['platform']) . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']);
+    $tweet = "#LFG #Destiny" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . CURRENT_PAGE . "?region=" . urlencode($_POST['region']). "&platform=" . urlencode($_POST['platform']) . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']) . "&time=" . urlencode(time());
     $postStatus = $connection->post('statuses/update',array('status' => $tweet));
     // print_r($postStatus);
 

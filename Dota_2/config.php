@@ -14,6 +14,7 @@ define('CONSUMER_SECRET', '5Frh4vViJ2ALfi3zVRJP1yltgYzs6RrfqwCO10UAjiSbOk4eke');
 
 define('CURRENT_PAGE', 'http://lpger.net/Dota_2');
 define('GAMENAME', 'Dota 2');
+define('GAMEIMG', '../img/dota2_logo.png');
 //twitter username LFGerDota2
 //email lf.gertwitter@gmail.com
 //twitter password inDustWeTrust~
