@@ -1034,3 +1034,24 @@ div#eventLocator {
     min-height: 0px;
     height: 59px;
 }
+
+form h2 {
+    padding-left: 0px;
+}
+
+@media (max-width: 800px) {
+
+    .gameRequest.bold .fifth {
+        display: none;
+    }
+
+    .fourth {
+        width: 22%;
+        height: 60px;
+    }
+
+    .full {
+        width: 99%;
+    }
+
+}
