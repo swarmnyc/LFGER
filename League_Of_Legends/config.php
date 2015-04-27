@@ -12,8 +12,9 @@ define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
 define('CONSUMER_KEY', 'd69ZHDvGaeB5CjwJ3cXq7zBKQ');
 define('CONSUMER_SECRET', '9BAev2QgSvnToBaSbQTuhspkdhQoDQKBL2Suyvh5FZKBSOd1cf');
 
-define('CURRENT_PAGE', 'http://lpger.net/League_Of_Legends');
+define('CURRENT_PAGE', 'http://lfger.com/League_Of_Legends');
 define('GAMENAME', 'League of Legends');
+define('GAMEIMG', '../img/lolLogo.png');
 
 //twitter username LFGERLOL
 //email lfger.twitter@gmail.com

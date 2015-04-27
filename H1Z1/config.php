@@ -12,8 +12,10 @@ define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
 define('CONSUMER_KEY', 'clJj1yw8Nw9yEGh9ROuItbd0h');
 define('CONSUMER_SECRET', 'jMMslxJfHTALNiBnfaFsUUS0asQ3EO6TxItIVpIWDFDKQuaXfr');
 
-define('CURRENT_PAGE', 'http://lpger.net/H1Z1');
+define('CURRENT_PAGE', 'http://lfger.com/H1Z1');
 define('GAMENAME', 'H1Z1');
+define('GAMEIMG', '../img/h1z1logo.png');
+
 //twitter username LFGerH1Z1
 //email lfge.rtwitter@gmail.com
 //twitter password inDustWeTrust~

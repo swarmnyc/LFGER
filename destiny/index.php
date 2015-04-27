@@ -35,14 +35,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: url(../img/destinyBig.jpg) center center fixed no-repeat; background-size: cover;">
 <head>
 
 
-    <?php include_once('../head.php') ?>
+    <?php include_once('head.php') ?>
 
     <!-- 1. AUTOMATICALLY REFRESH PAGE EVERY X SECONDS -->
-<!--    <meta http-equiv="refresh" content="300" />-->
+	<!--    <meta http-equiv="refresh" content="300" />-->
 
     <!-- TWITTER PULL SCRIPT GOES HERE TO EDIT WHAT ACCOUNT TWEETS PULL FROM EDIT "pullme.php'-->
     <?php include_once('../pullme.php') ?>
@@ -71,9 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script type="text/javascript">
         $(document).ready(function() {
 
-
             $("#regionSelector .regionChoices").click(function() {
-
 
                     console.log($(this).html());
                     console.log($(this));
@@ -84,9 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         var selected = $(this);
                         $("#regionForm").val($(this).html());
 
-
                     });
-
 
             $("#platformSelector .platformChoices").click(function() {
 
@@ -99,23 +95,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
                     });
-
-
-
-
-
-
         });
-
-
-
-
     </script>
 
 </head>
 
 <body id="#">
-<div id="container" style="background: url(../img/destinyBig.jpg) center center fixed no-repeat; background-size: cover;">
+<div id="container">
 <div class="container">
 
     <!-- START MAIN CTA AREA -->
@@ -142,14 +128,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div id="refresh">
                 <div id="tweets">
                     <ul>
-                        <h2>Looking For Group</h2>
+                        <h2>Guardians Looking For Group</h2>
 
                             <div class="gameRequest bold">
-                                <div class="fourth">Platform</div>
+                                <div class="fourth"><strong>Platform</div>
                                 <div class="fourth">Gamertag</div>
                                 <div class="fourth">Location</div>
                                 <div class="fourth">Level</div>
-                                <div class="fifth">Location/Notes</div>
+                                <div class="fifth">Location/Notes</strong></div>
 
                             </div>
 
@@ -173,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <!-- START FOOTER -->
     <div class="footer">
-        <div class="swarm">Made by <a class="whitey" href="http://swarmnyc.com" target="_blank">SWARM</a> | See other <a class="whitey" href="http://swarmnyc.com/experiments">Experiments</a> | Or grab the code at <a class="whitey" href="http://github.com/swarmnyc">GitHub</a> | <a class="whitey" href="tos.html" target="_blank">Terms of Service </a>
+        <div class="swarm">Made by <a class="whitey" href="http://swarmnyc.com" target="_blank">SWARM</a> | Sign up for  <a class="whitey" href="http://partyupplayer.com">Party Up Player</a> | LFGer <a class="whitey" href="tos.html" target="_blank">Terms of Service </a>
         </div>
 
     </div>

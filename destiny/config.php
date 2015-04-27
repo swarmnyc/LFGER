@@ -12,7 +12,7 @@ define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
 define('CONSUMER_KEY', 'fqJQPriLvxWc05DJUB5np2XjZ');
 define('CONSUMER_SECRET', 'bZ2jAdsi7MlegQ9xDS7UWWWVVBGEPQNvjkISPxNhvJukCv1qNo');
 
-define('CURRENT_PAGE', 'http://lpger.net/destiny');
+define('CURRENT_PAGE', 'http://lfger.com/destiny');
 define('GAMENAME', 'Destiny');
 define('GAMEIMG', '../img/destiny.png');
 //twitter username LFGERDestiny

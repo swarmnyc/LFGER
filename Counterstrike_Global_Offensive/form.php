@@ -1,7 +1,7 @@
 <form name="save" role="form" action="index.php" method="post" data-persist="persist" data-parsley-validate
       class="form-horizontal">
 
-    <h2>Find Someone to Play With</h2>
+    <h2>Submit a Game Request</h2>
 
     <div class="gamertagForm">
         <div id="gamertagButton"><h4>1. Who are you?</h4></div>
@@ -36,15 +36,24 @@
         </div>
 
     </div>
-<select name="platform" id="platformForm" value="" required class="formControl">
-            <option value="PC">PC</option>
+    <div class="platformForm"><select name="platform" id="platformForm" value="" required class="formControl">
+            <option value="">Select platform</option>
+            <option value="XBOX 360"> Xbox 360</option>
+            <option value="XBOX One"> Xbox One</option>
+            <option value="PC"> PC</option>
 
 
         </select>
 
+        <div id="platformSelector">
+            <div id="platformButton"><h4>3. What system?</h4></div>
+            <div class="platformChoices">XBOX 360</div>
+            <div class="platformChoices">XBOX One</div>
+            <div class="platformChoices">PC</div>
 
+        </div>
 
-
+    </div>
 
     <div class="evenForm"><div id="eventLocator"><h4>Where in the game are you?</h4></div>
         <input type="text" name="event" id="eventInput" placeholder="Where can other players find you?"/>

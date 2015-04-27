@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
 body{background-color: 4a4e67;}
 #thankPageBody{background-image: url(../img/background-whispers.jpg);background-repeat: repeat-y;background-position: top left;background-size: 100% auto;background-attachment: fixed;
 }
@@ -1054,4 +1056,61 @@ form h2 {
         width: 99%;
     }
 
+
+
+    div#tweets {
+        width: 140%;
+    }
+
+    div#refresh {
+        overflow: scroll;
+        width: 100%;
+    }
+
+    div#container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        position: absolute;
+        width: 100%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    form {
+        height: 1100px!important;
+    }
+
+    .gamertagForm {
+        width: 100%;
+    }
+
+    .regionForm {
+        width: 100%;
+    }
+
+    .platformForm {
+        width: 100%;
+    }
+
+    input.submitForm {
+        width: 40%;
+    }
+
+    img.logo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    html {
+        overflow-x: hidden;
+
+        min-height: 100%!important;
+        min-width: 100%!important;
+    }
+
+
 }
+

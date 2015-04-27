@@ -12,7 +12,7 @@ define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
 define('CONSUMER_KEY', 'qefqYndHs7ahgx2xmnLob14Nh');
 define('CONSUMER_SECRET', '5Frh4vViJ2ALfi3zVRJP1yltgYzs6RrfqwCO10UAjiSbOk4eke');
 
-define('CURRENT_PAGE', 'http://lpger.net/Dota_2');
+define('CURRENT_PAGE', 'http://lfger.com/Dota_2');
 define('GAMENAME', 'Dota 2');
 define('GAMEIMG', '../img/dota2_logo.png');
 //twitter username LFGerDota2

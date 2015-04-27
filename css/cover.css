@@ -1,5 +1,7 @@
 /*UNIVERSALS*/
-body {/*background-color:#000; background-image:url('../img/background.png');*/background-color:#050505;background-repeat:repeat;}
+body {
+    background-color: transparent;
+    /*background-color:#000; background-image:url('../img/background.png');*/}
 a, a:hover, a:focus {color: #00b5cf;}
 .contain-main {margin: 0 auto; width: auto; text-align: center;}
 
