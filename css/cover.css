@@ -26,7 +26,7 @@ a, a:hover, a:focus {color: #00b5cf;}
 input[type=email] {font-color: #fff; background-color: transparent; border:1px solid #eaa59e;-webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;padding: 30px;height: 60px;margin-right: 20px;}
 input[type=texatarea] {resize: none;font-color: #fff; background-color: #171717; background: opacity:0.5;border: 1px solid #eaa59e;-webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;padding: 30px;height: 200px;}
 
-.form-control {font-color: #fff; background-color: #171717; background: opacity:0.5;border: 1px solid #eaa59e;-webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;padding: 30px;resize: none;}
+.form-control {font-color: #fff; background-color: #171717; background: opacity:0.5;border: 1px solid rgba(255,255,255,.3);-webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;padding: 30px;resize: none;}
 
 /* TWITTER STYLE */
 .user, .tweet, .timePosted {

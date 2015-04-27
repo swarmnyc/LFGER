@@ -1,4 +1,10 @@
-<?php 
+
+
+<?php
+
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
 function autoDetectLink($str) {
 	return $str = preg_replace_callback('#(?:http?://\S+)|(?:https?://\S+)|(?:www.\S+)|(?:\S+\.\S+)#', function($arr)
 					{
@@ -18,6 +24,22 @@ function randomColor() {
 	return $colors[rand(0,count($colors)-1)];
 }
 
+function pluralize( $count, $text )
+{
+    return $count . ( ( $count == 1 ) ? ( " $text" ) : ( " ${text}s" ) );
+}
+
+function ago( $datetime )
+{
+    $interval = date_create('now')->diff( $datetime );
+    $suffix = ( $interval->invert ? ' ago' : '' );
+    if ( $v = $interval->y >= 1 ) return pluralize( $interval->y, 'year' ) . $suffix;
+    if ( $v = $interval->m >= 1 ) return pluralize( $interval->m, 'month' ) . $suffix;
+    if ( $v = $interval->d >= 1 ) return pluralize( $interval->d, 'day' ) . $suffix;
+    if ( $v = $interval->h >= 1 ) return pluralize( $interval->h, 'hour' ) . $suffix;
+    if ( $v = $interval->i >= 1 ) return pluralize( $interval->i, 'minute' ) . $suffix;
+    return pluralize( $interval->s, 'second' ) . $suffix;
+}
 
 function displayGame($tweet, $isTweet = true) {
     $query;
@@ -28,6 +50,12 @@ function displayGame($tweet, $isTweet = true) {
 
         $urlQuery = parse_url($url, PHP_URL_QUERY);
         parse_str($urlQuery, $query);
+
+
+       $twitterDate = new DateTime($tweet->created_at);
+
+       $timeAgo = ago($twitterDate);
+
     } else {
 
         $query = $tweet;
@@ -71,6 +99,10 @@ function displayGame($tweet, $isTweet = true) {
     echo $query['notes'];
     echo '</div>';
 
+
+    echo '<div class="timeAgo">';
+    echo $timeAgo;
+    echo '</div>';
 
     echo '</div>'; //close gameRequst
 
