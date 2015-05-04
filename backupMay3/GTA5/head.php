@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<link rel="shortcut icon" href="../favicon.ico">
+
+<title>LFGER | The Grand Theft Auto V LFG Looking For Group Team Finder</title>
+<meta name="title" content="LFGER | The Grand Theft Auto V LFG Looking For Group Team Finder" />
+<meta name="author" content="SWARM NYC" />
+<meta name="description" content="The  Grand Theft Auto V Looking for Group, Fireteam, Raid finder, find players your crucible, crota, nightfall and wolves  team. Your favorite games are on LFGer" />
+<meta name="Copyright" content="SWARM 2015" />
+
+<!-- Where is the site located -->
+<meta name="geo.position" content="40.740001678467, -73.970001220703"/>
+<meta name="ICBM" content="40.740001678467, -73.970001220703"/>
+
+
+<!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../fonts/fonts.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+<link href="../css/cover.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+
+<!--  Mobile Viewport
+http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+device-width : Occupy full width of the screen in its current orientation
+initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width (wrong for most sites)
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="../apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-touch-icon-152x152.png" />
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@LFGerGTA5">
+<meta name="twitter:title" content="LFGER | The LFG  Grand Theft Auto V Looking For Group Team Finder">
+<meta name="twitter:description" content="SWARM BOT 5000 lets you anonymously tweet at people from the @swarmbot5000 twitter account. Set up your own anon twitter at github.com/swarmnyc/swarmbot5000">
+<meta name="twitter:url" content="http://lfger.com/">
+
+<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+<meta property="og:title" content="SWARM BOT 5000 | TWEET ANONYMOUSLY AT PEOPLE" />
+<meta property="og:description" content="SWARM BOT 5000 lets you anonymously tweet at people from the @swarmbot5000 twitter account. Set up your own anon twitter at github.com/swarmnyc/swarmbot5000" />
+<meta property="og:url" content="http://www.lfger.com/" />
+<meta property="og:image" content="" />

@@ -1,0 +1,1284 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+
+
+body{background-color: 4a4e67;}
+#thankPageBody{background-image: url(../img/background-whispers.jpg);background-repeat: repeat-y;background-position: top left;background-size: 100% auto;background-attachment: fixed;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    opacity: .8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  .8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  .8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/**********************************
+		INDEX PAGE STYLE
+***********************************/
+#emailSubmitWrapper{
+    margin: 0;
+    width: 500px;
+}
+#emailSubmitWrapper .form-inline{
+    margin-bottom: 40px;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.logo .logo-text{
+    font-size:20px;
+    font-family: 'Avenir Next', sans-serif;
+    color: #fcf5e6;
+    text-align: center;
+    margin-bottom: -30px;
+}
+.logo .logo-desc{
+    font-size: 13px;
+    font-family: 'Avenir Next', sans-serif;
+    text-align: center;
+    color: #fcf5e6;
+}
+
+.whitey {color: #fff; font-weight: bold; text-transform: uppercase; text-decoration: underline;}
+
+#fieldEmail{
+    width: 356px;
+    font-size: 17px;
+    color: white;
+    float: left;
+    font-family: 'Avenir Next', sans-serif;
+}
+#emailSubmitForm button[type="submit"]{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 14px;
+    width: 120px;
+}
+.index-intro{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+#idxSneekPeek{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 15px;
+}
+#tweets{
+    width: 100%;
+    position: relative;
+    padding-bottom: 1px;
+    margin-bottom: -20px;
+}
+#idxBody #tweets:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    /*linear-gradient*/
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(0,0,0,0),0.25),color-stop(rgba(0, 0, 0, 0),0.31),color-stop(rgba(0, 0, 0, 1),0.94),color-stop(rgba(0, 0, 0, 0),1));
+    /*@@prefixmycss->No equivalent*/
+    background:-webkit-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:   -moz-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:     -o-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:        linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+}
+#tweets ul{
+    padding-left: 0px;
+}
+#thankPageBody #tweets ul{
+    padding-left: 0;
+}
+#tweets ul li{
+    padding-left: 120px;
+    position: relative;
+    min-height: 100px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#tweets ul li:after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+}
+.contain-main{
+    width: 600px;
+    z-index: 9999;
+}
+.contain-main2{
+    width: 500px; margin: 0 auto;
+}
+#thankPageTweetForm textarea{
+    font-family: 'Avenir Next', sans-serif;
+    background: #eaa59e;
+    border: 1px solid #eaa59e;
+    width: 100%;
+    padding: 20px;
+    color: #fcf5e6;
+    font-size: 16px;
+    resize: none;
+    float: left;
+    width: 71%;
+    height: 100px;
+    padding-top: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#thankPageTweetForm button[type="submit"]{
+    font-family: 'Avenir Next',sans-serif;
+    width: 120px;
+    height: 100px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+}
+.tweet{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+@media (max-width: 499px) {
+    .container {margin-right: auto;margin-left: auto;}
+
+    #emailSubmitWrapper{
+        width: 320px;
+    }
+    #thankPageBody .contain-main{
+        width: 320px;
+    }
+    #thankPageTweetForm textarea{
+        font-family: 'Avenir Next', sans-serif;
+        background: #eaa59e;
+        border: 1px solid #eaa59e;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        resize: none;
+        float: left;
+        height: 100px;
+        padding-top: 15px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;}
+    .righton {float: right; margin-top: 10px;}
+    .footer {display: none;}
+    .wrapitup {border-left: 0px solid #eaa59e; border-right: 0px solid #eaa59e;border-top: 0px solid #eaa59e; padding: 00px; margin-top: 20px;}
+
+    .logo .logo-text{
+        font-size:20px;
+        font-family: 'Avenir Next', sans-serif;
+        color: #fcf5e6;
+        text-align: center;
+        margin-bottom: 10px;}
+
+    .spacer {height: 20px;}
+    #tweets ul li {
+        padding-left: 120px;
+        position: relative;
+        min-height: 100px;
+        font-size: 17px;
+        margin-bottom: 20px;}
+
+    #thankPageTweetForm button[type="submit"]{
+        font-family: 'Avenir Next',sans-serif;
+        width: 120px;
+        height: 60px;
+        margin-right: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;}
+
+    .footer{background-color: #eaa59e; height: 40px; width: 100%; max-width:720px; padding: 5px; margin: 0 auto;}
+    .swarm{text-align: center; color: #ccc; font-family: 'Avenir Next', sans-serif; color:#fcf5e6; padding-top: 5px; }
+
+
+}
+
+
+li.featured {
+    border: black solid 3px;
+    box-shadow: black 1px 1px 10px;
+}
+
+li.featured:after {
+}
+
+.featured .tweet:after {}
+
+li.featured:after {
+    height: 96px!important;
+}
+
+.fifth {
+    float: left;
+    width: 18%;
+    text-align: left;
+    margin: 2px;
+    padding: 1%;
+}
+
+.gameRequest {
+    width: 100%;
+    min-height: 160px;
+    display: inline-block;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.full {
+    width: 45%;
+    float: left;
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+
+form div {
+    float: left;
+    text-align: left;
+    margin-left: 1%;
+}
+
+img.logo {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+}
+
+img.gameLogo {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+}
+
+
+select#regionForm {
+}
+
+div#regionSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.regionChoices {
+    height: 30px;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+}
+
+div#regionButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+.regionChoices.selected {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.regionChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+
+select#platformForm {
+}
+
+div#platformSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.platformChoices {
+    height: 30px;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+}
+
+div#platformButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.platformChoices.selected {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.platformChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+.regionForm {
+    width: 31%;
+}
+
+.platformForm {
+    width: 31%;
+}
+
+#platformForm {}
+
+input, button, select, textarea {
+}
+
+form.form-horizontal {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 590px;
+    background-color: rgba(0,0,0,.7);
+    margin-bottom: 28px;
+    color: white;
+    padding: 40px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px 15px 3px 3px;
+}
+
+div#gamertagButton {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.gamertagForm {
+    width: 31%;
+}
+
+input {
+    width: 90%;
+    transition: all .4s;
+    color: black!important;
+    background-color: RGBA(0,0,0,0);
+    border: rgba(255,255,255,.3) solid 1px;
+    PADDING: 5PX;
+}
+
+h2 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    padding-left: 25px;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm {
+    float: right;
+    width: 20%;
+    clear: both;
+    margin-right: 9%;
+}
+
+.evenForm {
+    width: 100%;
+}
+
+.notesForm {
+    width: 72%!important;
+    float: right!important;
+}
+
+div#eventLocator {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;
+}
+
+.gameRequest.featured {
+    background-color: rgba(255,255,255,.2);
+    margin-top: -5px;
+    border-width: 5px;
+    border-top: rgba(255,255,255,.4) solid 5px;
+}
+
+.half {
+    width: 40%;
+    margin-right: 7%;
+}
+
+.half input {
+    width: 60%;
+    margin-right: 70%;
+}
+
+.levelSubForm {}
+
+.half .regionChoices {
+    width: 70%;
+}
+
+.fourth {
+    width: 13%;
+    float: left;
+    text-align: left;   margin: 2px;   padding: 1%;
+    height: 160px;
+}body{background-color: 4a4e67;}
+#thankPageBody{background-image: url(../img/background-whispers.jpg);background-repeat: repeat-y;background-position: top left;background-size: 100% auto;background-attachment: fixed;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    opacity: .8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  .8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  .8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/**********************************
+		INDEX PAGE STYLE
+***********************************/
+#emailSubmitWrapper{
+    margin: 0;
+    width: 500px;
+}
+#emailSubmitWrapper .form-inline{
+    margin-bottom: 40px;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 20px;
+
+    margin-top: 65px;
+}
+.logo .logo-text{
+    font-size:20px;
+    font-family: 'Avenir Next', sans-serif;
+    color: #fcf5e6;
+    text-align: center;
+    margin-bottom: -30px;
+}
+.logo .logo-desc{
+    font-size: 13px;
+    font-family: 'Avenir Next', sans-serif;
+    text-align: center;
+    color: #fcf5e6;
+}
+
+.whitey {color: #fff; font-weight: bold; text-transform: uppercase; text-decoration: underline;}
+
+#fieldEmail{
+    width: 356px;
+    font-size: 17px;
+    color: white;
+    float: left;
+    font-family: 'Avenir Next', sans-serif;
+}
+#emailSubmitForm button[type="submit"]{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 14px;
+    width: 120px;
+}
+.index-intro{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+#idxSneekPeek{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 15px;
+}
+#tweets{
+    width: 100%;
+    position: relative;
+    padding-bottom: 1px;
+    margin-bottom: -20px;
+}
+#idxBody #tweets:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    /*linear-gradient*/
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(0,0,0,0),0.25),color-stop(rgba(0, 0, 0, 0),0.31),color-stop(rgba(0, 0, 0, 1),0.94),color-stop(rgba(0, 0, 0, 0),1));
+    /*@@prefixmycss->No equivalent*/
+    background:-webkit-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:   -moz-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:     -o-linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+    background:        linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0, 0, 0, 0) 31%,rgba(0, 0, 0, 1) 94%,rgba(0, 0, 0, 0) 100%);
+}
+#tweets ul{
+    padding-left: 0px;
+}
+#thankPageBody #tweets ul{
+    padding-left: 0;
+}
+#tweets ul li{
+    padding-left: 120px;
+    position: relative;
+    min-height: 100px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#tweets ul li:after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+}
+.contain-main{
+    width: 600px;
+    z-index: 9999;
+}
+.contain-main2{
+    width: 500px; margin: 0 auto;
+}
+#thankPageTweetForm textarea{
+    font-family: 'Avenir Next', sans-serif;
+    background: #eaa59e;
+    border: 1px solid #eaa59e;
+    width: 100%;
+    padding: 20px;
+    color: #fcf5e6;
+    font-size: 16px;
+    resize: none;
+    float: left;
+    width: 71%;
+    height: 100px;
+    padding-top: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#thankPageTweetForm button[type="submit"]{
+    font-family: 'Avenir Next',sans-serif;
+    width: 120px;
+    height: 100px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+}
+.tweet{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+@media (max-width: 499px) {
+    .container {margin-right: auto;margin-left: auto;}
+
+    #emailSubmitWrapper{
+        width: 320px;
+    }
+    #thankPageBody .contain-main{
+        width: 320px;
+    }
+    #thankPageTweetForm textarea{
+        font-family: 'Avenir Next', sans-serif;
+        background: #eaa59e;
+        border: 1px solid #eaa59e;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        resize: none;
+        float: left;
+        height: 100px;
+        padding-top: 15px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;}
+    .righton {float: right; margin-top: 10px;}
+    .footer {display: none;}
+    .wrapitup {border-left: 0px solid #eaa59e; border-right: 0px solid #eaa59e;border-top: 0px solid #eaa59e; padding: 00px; margin-top: 20px;}
+
+    .logo .logo-text{
+        font-size:20px;
+        font-family: 'Avenir Next', sans-serif;
+        color: #fcf5e6;
+        text-align: center;
+        margin-bottom: 10px;}
+
+    .spacer {height: 20px;}
+    #tweets ul li {
+        padding-left: 120px;
+        position: relative;
+        min-height: 100px;
+        font-size: 17px;
+        margin-bottom: 20px;}
+
+    #thankPageTweetForm button[type="submit"]{
+        font-family: 'Avenir Next',sans-serif;
+        width: 120px;
+        height: 60px;
+        margin-right: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;}
+
+    .footer{background-color: #eaa59e; height: 40px; width: 100%; max-width:720px; padding: 5px; margin: 0 auto;}
+    .swarm{text-align: center; color: #ccc; font-family: 'Avenir Next', sans-serif; color:#fcf5e6; padding-top: 5px; }
+
+
+}
+
+
+li.featured {
+    border: black solid 3px;
+    box-shadow: black 1px 1px 10px;
+}
+
+li.featured:after {
+}
+
+.featured .tweet:after {}
+
+li.featured:after {
+    height: 96px!important;
+}
+
+.fifth {
+    float: left;
+    width: 18%;
+    text-align: left;
+    margin: 2px;
+    padding: 1%;
+}
+
+.gameRequest {
+    width: 100%;
+    min-height: 160px;
+    display: inline-block;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(20,20,20,.9);
+    margin-bottom: 25px;
+}
+
+
+.full {
+    width: 46%;
+    float: right;
+    text-align: left;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    border-bottom: rgba(255,255,255,.05) solid 3px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+form div {
+    float: left;
+    text-align: left;
+    margin-left: 1%;
+    padding: 15px;
+    padding-left: 0px;
+    width: 100%!important;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+
+img.logo {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+}
+
+img.gameLogo {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+}
+
+
+select#regionForm {
+}
+
+div#regionSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.regionChoices {
+    height: 30px;
+    width: 98%;
+    text-align: left;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+    display: none;
+}
+
+div#regionButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+.regionChoices.selected {
+    color: white;
+    background-color: rgba(255,255,255,.4);
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+    display: none;
+}
+
+.regionChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+
+select#platformForm {
+    font-color: #fff;   background-color: #171717;   background: opacity:0.5;   border: 1px solid rgba(255,255,255,.3);   -webkit-border-radius: 0px;   -moz-border-radius: 0px;   border-radius: 0px;   padding: 30px;   resize: none;
+    height: 30px;   line-height: 30px;
+}
+
+div#platformSelector {
+    width: 80%;
+    overflow: hidden;
+    transition: all .7s;
+    max-height: 300px!important;
+}
+
+.platformChoices {
+    height: 30px;
+    width: 98%;
+    text-align: left;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    border: rgba(0,0,0,0) solid 1px;
+    display: none;
+}
+
+div#platformButton {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.platformChoices.selected {
+    color: white;
+    background-color: rgba(255,255,255,.4);
+    text-align: center;
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+    border: rgba(255,255,255,.3) solid 1px;
+}
+
+.platformChoices:hover {
+
+    cursor: pointer;
+    color: black;
+
+
+    background-color: rgba(255,255,255,.2);
+
+    height: 19px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-radius: 9px;
+
+}
+
+.regionForm {
+    width: 31%;
+    height: auto;
+}
+
+.platformForm {
+    width: 31%;
+    height: auto;
+}
+
+#platformForm {}
+
+input, button, select, textarea {
+}
+
+form.form-horizontal {
+    margin: 0 auto;
+    height: 0%;
+    margin-bottom: 28px;
+    color: white;
+    padding: 40px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    margin-top: 125px;
+    width: 0px;
+    position: fixed;
+    z-index: 30000000;
+    background-color: rgba(0,0,0,1);
+    bottom: 100px;
+    right: 171px;
+    overflow: scroll;
+    padding: 0px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+div#gamertagButton {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+}
+
+.gamertagForm {
+    width: 31%;
+}
+
+input {
+    width: 72%;
+    transition: all .4s;
+    float: right!important;
+}
+
+h2 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    background-color: rgba(0,0,0,.75);
+    padding-top: 15px!important;
+    padding-bottom: 15px;
+    margin-left: 0px;
+    font-size: 20px!important;
+    font-weight: 800;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+input.submitForm {
+    float: right;
+    width: 30%;
+    clear: both;
+    background-color: rgba(255,255,255,.75);
+    margin-top: 25px;
+}
+
+.evenForm {
+    width: 30%;
+    margin-top: 35px;
+}
+
+.notesForm {
+    width: 64%;
+}
+
+div#eventLocator {
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;
+    padding: 0px;
+}
+
+.gameRequest.featured {
+    background-color: rgba(255,255,255,.3);
+    margin-top: -5px;
+    border-width: 5px;
+    border-top: rgba(255,255,255,.4) solid 5px;
+}
+
+.half {
+    width: 40%;
+    margin-right: 7%;
+}
+
+.half input {
+    width: 60%;
+    margin-right: 70%;
+}
+
+.levelSubForm {}
+
+.half .regionChoices {
+    width: 70%;
+}
+
+.fourth {
+    width: 13%;
+    float: left;
+    text-align: left;   margin: 2px;   padding: 1%;
+    height: 50px;
+}
+
+.gameRequest.bold {
+    min-height: 0px;
+    height: 59px;
+}
+
+form h2 {
+    padding-left: 0px;
+}
+
+@media (max-width: 800px) {
+
+    .gameRequest.bold .fifth {
+        display: none;
+    }
+
+    .fourth {
+        width: 22%;
+        height: 60px;
+    }
+
+    .full {
+        width: 99%;
+    }
+
+
+
+    div#tweets {
+        width: 140%;
+    }
+
+    div#refresh {
+        overflow: scroll;
+        width: 100%;
+    }
+
+    div#container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        position: absolute;
+        width: 100%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+
+
+
+
+
+
+    html {
+        overflow-x: hidden;
+
+        min-height: 100%!important;
+        min-width: 100%!important;
+    }
+
+
+}
+
+.timeAgo {
+    position: absolute;
+    left: 25px;
+    margin-top: 130px;
+}
+
+
+.gameRequest:hover {
+
+
+    background-color: rgba(0,0,0,.8);
+
+}
+
+.fourth:hover {
+
+
+    background-color: rgba(255,255,255,.1);
+
+}
+
+.full:hover {
+
+
+    background-color: rgba(255,255,255,.1);
+
+}
+
+.full.noHover:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+form div div {
+    border: white solid 0px;
+    margin-bottom: 0px;
+}
+
+div#eventForm {
+    margin-top: 35px;
+}
+
+.fourth img {
+    height: 80%;
+    margin-right: 4px;
+}
+
+div#stickyAction {
+    position: fixed;
+    z-index: 200;
+    right: 10%;
+    bottom: 45px;
+    width: 140px;
+    height: 140px;
+    color: white;
+    font-weight: 800;
+    background-color: #9ECDCE;
+    border-radius: 50%;
+    padding-left: 33px;
+    padding-top: 57px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.15);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+
+}
+
+div#stickyAction:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    box-shadow: 3px 3px 15px rgba(0,0,0,.85);
+    cursor: pointer;
+}
+
+div#stickyAction:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+
+.messaggio.upTop {
+    width: 100%;
+    height: 23px;
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    z-index: 30000;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+
+
+.bold .fourth {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.bold .fifth {
+    font-weight: 200;   text-transform: uppercase;
+}
+
+
+form.open {
+    padding: 40px;      padding-left: 25px;   padding-right: 25px;
+    height: 70%;
+    width: 89%;
+    max-width: 610px;
+    right: 20px!important;
+    padding-top: 6px;
+}
+
+#eventLocator h4 {
+    margin-bottom: 15px;
+    font-size: 19px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+    float: left;   text-align: left;   margin-left: 1%;   padding: 15px;   padding-left: 0px;   width: 100%!important;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid #f00;
+}
+
+.inputType {
+    float: left;
+    width: 25%!important;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+select {
+    float: left;
+    width: 50%!important;
+    margin-left: 6%;
+    -webkit-appearance: menulist-button; select - menulist user agent stylesheet   -webkit-rtl-ordering: logical;   -webkit-writing-mode: horizontal-tb;   align-items: center;   background-color: rgb(23, 23, 23);   border-bottom-color: rgba(255, 255, 255, 0.298039);   border-bottom-left-radius: 5px;   border-bottom-right-radius: 5px;   border-bottom-style: solid;   border-bottom-width: 1px;   border-image-outset: 0px;   border-image-repeat: stretch;   border-image-slice: 100%;   border-image-source: none;   border-image-width: 1;   border-left-color: rgba(255, 255, 255, 0.298039);   border-left-style: solid;   border-left-width: 1px;   border-right-color: rgba(255, 255, 255, 0.298039);   border-right-style: solid;   border-right-width: 1px;   border-top-color: rgba(255, 255, 255, 0.298039);   border-top-left-radius: 5px;   border-top-right-radius: 5px;   border-top-style: solid;   border-top-width: 1px;   box-sizing: border-box;   color: rgb(255, 255, 255);   cursor: default;   display: block;   float: left;   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;   font-size: 14px;   font-stretch: normal;   font-style: normal;   font-variant: normal;   font-weight: normal;   height: 30px;   letter-spacing: normal;   line-height: normal;   margin-bottom: 0px;   margin-left: 22.5px;   margin-right: 0px;   margin-top: 0px;   overflow-x: visible;   overflow-y: visible;   padding-bottom: 0px;   padding-left: 0px;   padding-right: 0px;   padding-top: 0px;   resize: none;   text-align: start;   text-indent: 0px;   text-rendering: auto;   text-shadow: none;   text-transform: none;   white-space: pre;   width: 187.5px;   word-spacing: 0px;   writing-mode: lr-tb;
+}
+
+input#notesInput {
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .inputType {
+        width: 100%!important;
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%!important;
+    }
+
+    select {
+        margin-left: 0px;
+    }
+
+    input#notesInput {}
+
+    .notesForm {
+        width: 100%!important;
+    }
+    .fourth img {
+        height: 30%;
+    }
+
+}

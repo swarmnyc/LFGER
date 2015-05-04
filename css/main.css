@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 
+
+
+
 body{background-color: 4a4e67;}
 #thankPageBody{background-image: url(../img/background-whispers.jpg);background-repeat: repeat-y;background-position: top left;background-size: 100% auto;background-attachment: fixed;
 }
@@ -260,7 +263,6 @@ li.featured:after {
     float: left;
     text-align: left;
     margin-bottom: 16px;
-    margin-left: 10px;
     margin-top: 15px;
 }
 
@@ -285,7 +287,6 @@ img.gameLogo {
 
 
 select#regionForm {
-    display: none;
 }
 
 div#regionSelector {
@@ -319,7 +320,6 @@ div#regionButton {
 .regionChoices.selected {
     color: white;
     background-color: rgba(0,0,0,0);
-    text-align: center;
     height: 15px;
     padding-top: 5px;
     padding-bottom: 25px;
@@ -334,7 +334,7 @@ div#regionButton {
 
 
     background-color: rgba(255,255,255,.2);
-    text-align: center;
+
     height: 19px;
     padding-top: 5px;
     padding-bottom: 25px;
@@ -344,7 +344,6 @@ div#regionButton {
 
 
 select#platformForm {
-    display: none;
 }
 
 div#platformSelector {
@@ -394,8 +393,7 @@ div#platformButton {
 
 
     background-color: rgba(255,255,255,.2);
-    text-align: center;
-    height: 19px;
+
     padding-top: 5px;
     padding-bottom: 25px;
     border-radius: 9px;
@@ -413,14 +411,6 @@ div#platformButton {
 #platformForm {}
 
 input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    background-color: rgba(0,0,0,0);
-    border: rgba(255,255,255,.2) solid 1px;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 17px;
 }
 
 form.form-horizontal {
@@ -448,6 +438,10 @@ div#gamertagButton {
 input {
     width: 90%;
     transition: all .4s;
+    color: black!important;
+    background-color: rgba(255,255,255,1);
+    border: rgba(255,255,255,.3) solid 1px;
+    PADDING: 5PX;
 }
 
 h2 {
@@ -455,8 +449,8 @@ h2 {
     width: 100%;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 26px;
-    padding-left: 15px;
+    margin-bottom: 6px;
+    padding-left: 25px;
 }
 
 input[type="text"]:focus {
@@ -479,11 +473,12 @@ input.submitForm {
 }
 
 .notesForm {
-    width: 100%;
+    width: 72%!important;
+    float: right!important;
 }
 
 div#eventLocator {
-    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;
 }
 
 .gameRequest.featured {
@@ -553,6 +548,7 @@ button:focus {
     text-align: center;
     margin-bottom: 20px;
 
+    margin-top: 65px;
 }
 .logo .logo-text{
     font-size:20px;
@@ -766,23 +762,36 @@ li.featured:after {
     border-bottom: rgba(255,255,255,.4) solid 1px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: rgba(235,235,235,1);
+    margin-bottom: 25px;
+    color: black;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
 }
 
 
 .full {
-    width: 45%;
-    float: left;
+    width: 46%;
+    float: right;
     text-align: left;
-    margin-bottom: 16px;
-    margin-left: 10px;
-    margin-top: 15px;
+    margin-bottom: 2px;
+    margin-top: 5px;
     border-bottom: rgba(255,255,255,.05) solid 3px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 200;
 }
 
 form div {
     float: left;
     text-align: left;
     margin-left: 1%;
+    padding: 15px;
+    padding-left: 0px;
+    width: 100%!important;
+    margin-bottom: 25px;
+    margin-left: 0px;
 }
 
 img.logo {
@@ -800,7 +809,6 @@ img.gameLogo {
 
 
 select#regionForm {
-    display: none;
 }
 
 div#regionSelector {
@@ -813,7 +821,7 @@ div#regionSelector {
 .regionChoices {
     height: 30px;
     width: 98%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 8px;
     border-radius: 9px;
     height: 15px;
@@ -823,6 +831,7 @@ div#regionSelector {
     transition: all .4s;
     -webkit-transition: all .4s;
     border: rgba(0,0,0,0) solid 1px;
+    display: none;
 }
 
 div#regionButton {
@@ -834,12 +843,12 @@ div#regionButton {
 .regionChoices.selected {
     color: white;
     background-color: rgba(255,255,255,.4);
-    text-align: center;
     height: 15px;
     padding-top: 5px;
     padding-bottom: 25px;
     border-radius: 9px;
     border: rgba(255,255,255,.3) solid 1px;
+    display: none;
 }
 
 .regionChoices:hover {
@@ -849,7 +858,7 @@ div#regionButton {
 
 
     background-color: rgba(255,255,255,.2);
-    text-align: center;
+
     height: 19px;
     padding-top: 5px;
     padding-bottom: 25px;
@@ -859,7 +868,8 @@ div#regionButton {
 
 
 select#platformForm {
-    display: none;
+    font-color: #fff;   background-color: #171717;   background: opacity:0.5;   border: 1px solid rgba(255,255,255,.3);   -webkit-border-radius: 0px;   -moz-border-radius: 0px;   border-radius: 0px;   padding: 30px;   resize: none;
+    height: 30px;   line-height: 30px;
 }
 
 div#platformSelector {
@@ -872,7 +882,7 @@ div#platformSelector {
 .platformChoices {
     height: 30px;
     width: 98%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 8px;
     border-radius: 9px;
     height: 15px;
@@ -882,6 +892,7 @@ div#platformSelector {
     transition: all .4s;
     -webkit-transition: all .4s;
     border: rgba(0,0,0,0) solid 1px;
+    display: none;
 }
 
 div#platformButton {
@@ -909,7 +920,7 @@ div#platformButton {
 
 
     background-color: rgba(255,255,255,.2);
-    text-align: center;
+
     height: 19px;
     padding-top: 5px;
     padding-bottom: 25px;
@@ -919,37 +930,41 @@ div#platformButton {
 
 .regionForm {
     width: 31%;
+    height: auto;
 }
 
 .platformForm {
     width: 31%;
+    height: auto;
 }
 
 #platformForm {}
 
 input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    background-color: rgba(0,0,0,0);
-    border: rgba(255,255,255,.2) solid 1px;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 17px;
 }
 
 form.form-horizontal {
-    max-width: 1000px;
     margin: 0 auto;
-    height: 590px;
-    background-color: rgba(0,0,0,.7);
+    height: 0%;
     margin-bottom: 28px;
     color: white;
     padding: 40px;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 15px 15px 3px 3px;
+    border-radius: 15px;
+    margin-top: 125px;
+    width: 0px;
+    position: fixed;
+    z-index: 30000000;
+    background-color: rgba(240,240,240,1);
+    color: rgba(15,15,15,1);
+    bottom: 100px;
+    right: 171px;
+    overflow: scroll;
+    padding: 0px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
 }
 
 div#gamertagButton {
@@ -961,8 +976,9 @@ div#gamertagButton {
 }
 
 input {
-    width: 90%;
+    width: 72%;
     transition: all .4s;
+    float: right!important;
 }
 
 h2 {
@@ -970,8 +986,13 @@ h2 {
     width: 100%;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 26px;
-    padding-left: 15px;
+    background-color: rgba(250,250,250,1);
+    padding-top: 15px!important;
+    padding-bottom: 15px;
+    margin-left: 0px;
+    font-size: 20px!important;
+    font-weight: 800;
+    color: rgba(20,20,20,1);
 }
 
 input[type="text"]:focus {
@@ -984,22 +1005,24 @@ input.submitForm:hover {
 
 input.submitForm {
     float: right;
-    width: 20%;
+    width: 30%;
     clear: both;
-    margin-right: 9%;
-    background-color: rgba(255,255,255,.25);
+    background-color: rgba(255,255,255,.75);
+    margin-top: 25px;
 }
 
 .evenForm {
-    width: 100%;
+    width: 30%;
+    margin-top: 35px;
 }
 
 .notesForm {
-    width: 100%;
+    width: 64%;
 }
 
 div#eventLocator {
-    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+    margin-bottom: 15px;   font-size: 14px;   font-weight: 800;
+    padding: 0px;
 }
 
 .gameRequest.featured {
@@ -1029,7 +1052,7 @@ div#eventLocator {
     width: 13%;
     float: left;
     text-align: left;   margin: 2px;   padding: 1%;
-    height: 160px;
+    height: 50px;
 }
 
 .gameRequest.bold {
@@ -1039,6 +1062,213 @@ div#eventLocator {
 
 form h2 {
     padding-left: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+.timeAgo {
+    position: absolute;
+    left: 25px;
+    margin-top: 130px;
+}
+
+
+.gameRequest:hover {
+
+
+    background-color: rgba(250,250,250,1);
+
+}
+
+.fourth:hover {
+
+
+    background-color: rgba(255,255,255,.3);
+
+}
+
+.full:hover {
+
+
+    background-color: rgba(255,255,255,.1);
+
+}
+
+.full.noHover:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+form div div {
+    border: white solid 0px;
+    margin-bottom: 0px;
+}
+
+div#eventForm {
+    margin-top: 35px;
+}
+
+.fourth img {
+    height: 80%;
+    margin-right: 4px;
+}
+
+div#stickyAction {
+    position: fixed;
+    z-index: 200;
+    right: 10%;
+    bottom: 45px;
+    width: 140px;
+    height: 140px;
+    color: white;
+    font-weight: 800;
+    background-color: #9ECDCE;
+    border-radius: 50%;
+    padding-left: 33px;
+    padding-top: 57px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.15);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+
+}
+
+div#stickyAction:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    box-shadow: 3px 3px 15px rgba(0,0,0,.85);
+    cursor: pointer;
+}
+
+div#stickyAction:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+
+.messaggio.upTop {
+    width: 100%;
+    height: 23px;
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    z-index: 30000;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.1);
+}
+
+
+.bold .fourth {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.bold .fifth {
+    font-weight: 200;   text-transform: uppercase;
+}
+
+
+form.open {
+    padding: 40px;      padding-left: 25px;   padding-right: 25px;
+    height: 70%;
+    width: 89%;
+    max-width: 610px;
+    right: 20px!important;
+    padding-top: 6px;
+    box-shadow: 2px 2px 16px rgba(0,0,0,.7);
+}
+
+#eventLocator h4 {
+    margin-bottom: 15px;
+    font-size: 19px;   font-weight: 800;   border-bottom: rgba(255,255,255,.4) solid 1px;
+    float: left;   text-align: left;   margin-left: 1%;   padding: 15px;   padding-left: 0px;   width: 100%!important;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid #f00;
+}
+
+.inputType {
+    float: left;
+    width: 25%!important;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+select {
+    float: left;
+    width: 50%!important;
+    margin-left: 6%;
+    -webkit-appearance: menulist-button; select - menulist user agent stylesheet   -webkit-rtl-ordering: logical;   -webkit-writing-mode: horizontal-tb;   align-items: center;
+    background-color: rgba(255,255,255,1)!important;
+    color: black!important;
+    border-bottom-color: rgba(255, 255, 255, 0.298039);   border-bottom-left-radius: 5px;   border-bottom-right-radius: 5px;   border-bottom-style: solid;   border-bottom-width: 1px;   border-image-outset: 0px;   border-image-repeat: stretch;   border-image-slice: 100%;   border-image-source: none;   border-image-width: 1;   border-left-color: rgba(255, 255, 255, 0.298039);   border-left-style: solid;   border-left-width: 1px;   border-right-color: rgba(255, 255, 255, 0.298039);   border-right-style: solid;   border-right-width: 1px;   border-top-color: rgba(255, 255, 255, 0.298039);   border-top-left-radius: 5px;   border-top-right-radius: 5px;   border-top-style: solid;   border-top-width: 1px;   box-sizing: border-box;   color: rgb(255, 255, 255);   cursor: default;   display: block;   float: left;   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;   font-size: 14px;   font-stretch: normal;   font-style: normal;   font-variant: normal;   font-weight: normal;   height: 30px;   letter-spacing: normal;   line-height: normal;   margin-bottom: 0px;   margin-left: 22.5px;   margin-right: 0px;   margin-top: 0px;   overflow-x: visible;   overflow-y: visible;   padding-bottom: 0px;   padding-left: 0px;   padding-right: 0px;   padding-top: 0px;   resize: none;   text-align: start;   text-indent: 0px;   text-rendering: auto;   text-shadow: none;   text-transform: none;   white-space: pre;   width: 187.5px;   word-spacing: 0px;   writing-mode: lr-tb;
+}
+
+input#notesInput {
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .inputType {
+        width: 100%!important;
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%!important;
+    }
+
+    select {
+        margin-left: 0px;
+    }
+
+    input#notesInput {}
+
+    .notesForm {
+        width: 100%!important;
+    }
+    .fourth img {
+        height: 30%;
+
+        margin-left: -15px;
+    }
+
+
+
+
+}
+
+
+.messaggio h1 {
+    line-height: 170%;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: black;
+}
+
+:-ms-input-placeholder {
+    color: black;
 }
 
 @media (max-width: 800px) {
@@ -1056,10 +1286,8 @@ form h2 {
         width: 99%;
     }
 
-
-
     div#tweets {
-        width: 140%;
+        width: 100%;
     }
 
     div#refresh {
@@ -1079,43 +1307,69 @@ form h2 {
         overflow-x: hidden;
     }
 
-    form {
-        height: 1100px!important;
+    html {
+        overflow-x: hidden;
+
+        min-height: 100% !important;
+        min-width: 100% !important;
     }
 
-    .gamertagForm {
-        width: 100%;
+    div#stickyAction {
+        width: 100px;
+        height: 100px;
+        padding-top: 29px;
+        padding-left: 33px;
+        transform: translateX(25px);
+
     }
 
-    .regionForm {
-        width: 100%;
+    div#stickyAction:hover {
+        transform: translateX(25px) scale(1.05);
+        -webkit-transform: translateX(25px) scale(1.05);
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, .85);
+        cursor: pointer;
     }
 
-    .platformForm {
-        width: 100%;
+    .messaggio.upTop {
+        height: 51px;
     }
 
-    input.submitForm {
-        width: 40%;
+    .gameRequest div {
+        font-size: 12px !important;
     }
 
     img.logo {
         width: 100%;
-        max-width: 400px;
     }
 
-    html {
-        overflow-x: hidden;
-
-        min-height: 100%!important;
-        min-width: 100%!important;
+    .gameRequest.bold {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
+    h2 {
+        padding-left: 8px;
+    }
+    input.submitForm {
+        float: right;
+        width: 50%!important;
+    }
+}
+@media (max-width: 350px) {
+
+    .gameRequest div {
+        font-size: 11px !important;
+        margin-left: 2%;
+    }
+
+    .gameRequest.bold {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    h2 {
+        padding-left: 8px;
+    }
 
 }
 
-.timeAgo {
-    position: absolute;
-    left: 25px;
-    margin-top: 130px;
-}

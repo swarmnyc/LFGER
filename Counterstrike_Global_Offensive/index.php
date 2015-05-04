@@ -1,5 +1,3 @@
-<!-- THIS EXPERIMENT WAS BUILT BY SWARM - swarmnyc dot com -- use as you will, no guarantees, but do provide a link back. -->
-
 <?php
 /**
  * @file
@@ -10,19 +8,17 @@
 session_start();
 require_once('../twitteroauth/twitteroauth.php');
 require_once('config.php');
-require_once('../functions.php');
-/* Get user access tokens out of the session. */
 
-
-$cameFromUrl = false;
-$game = "";
-/* Create a TwitterOauth object with consumer/user tokens. */
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $tweet = "#LFG #Counterstrike" . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . CURRENT_PAGE . "?region=" . urlencode($_POST['region']). "&platform=" . urlencode($_POST['platform']) . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']) . "&time=" . urlencode(time());
+    $tweet = "#LFG #" . HASHTAG . " #" . str_replace(" ", "",$_POST['platform']) . " ~ gamertag: " . $_POST['gamertag'] . " ~ " . $_POST['notes'] . "~" . CURRENT_PAGE . "?region=" . urlencode($_POST['region']). "&platform=" . urlencode($_POST['platform']) . "&level=" . $_POST['level'] . "&event=" . urlencode($_POST['event'])  . "&gamertag=" . urlencode($_POST['gamertag']) . "&notes=" . urlencode($_POST['notes']) . "&time=" . urlencode(time());
     $postStatus = $connection->post('statuses/update',array('status' => $tweet));
     // print_r($postStatus);
+    $_POST = array();
+    //header("REQUEST METHOD: GET");
+    header("Location: " . CURRENT_PAGE . "?success=true");
+    exit();
 
 } else if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
@@ -32,15 +28,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
 }
+
+require_once('../functions.php');
+/* Get user access tokens out of the session. */
+
+
+$cameFromUrl = false;
+$game = "";
+/* Create a TwitterOauth object with consumer/user tokens. */
+
 ?>
+<!-- THIS EXPERIMENT WAS BUILT BY SWARM - swarmnyc dot com -- use as you will, no guarantees, but do provide a link back. -->
 
 <!DOCTYPE html>
-<html lang="en" style="background: url(../img/csoBig.jpg) center center fixed no-repeat; background-size: cover;">
+<html lang="en" style="background: url(<?php echo GAMEIMGBIG; ?>) center center fixed no-repeat; background-size: cover;">
 <head>
 
     <?php include_once('head.php') ?>
     <!-- 1. AUTOMATICALLY REFRESH PAGE EVERY X SECONDS -->
-    <meta http-equiv="refresh" content="300" />
+    <!--    <meta http-equiv="refresh" content="300" />-->
 
     <!-- TWITTER PULL SCRIPT GOES HERE TO EDIT WHAT ACCOUNT TWEETS PULL FROM EDIT "pullme.php'-->
     <?php include_once('../pullme.php') ?>
@@ -67,7 +73,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="../js/jquery.spritely-0.6.js" type="text/javascript"></script>
 
     <script type="text/javascript">
+
+        var open = false;
+
         $(document).ready(function() {
+
+
+            $("#stickyAction")[0].style.right = ((window.innerWidth - ($(".container").offset().left + $(".container")[0].clientWidth))+40) + "px"
+            $("form")[0].style.right = ((window.innerWidth - ($(".container").offset().left + $(".container")[0].clientWidth))+40) + "px"
 
 
             $("#regionSelector .regionChoices").click(function() {
@@ -99,7 +112,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             });
 
 
+            $("#stickyAction").click(function() {
 
+                if (open) {
+                    $("form").removeClass("open");
+                    open = false;
+                } else {
+                    open = true;
+                    $("form").addClass("open");
+                }
+
+            });
+
+            $(window).resize(function() {
+                $("#stickyAction")[0].style.right = ((window.innerWidth - ($(".container").offset().left + $(".container")[0].clientWidth))+40) + "px"
+                $("form")[0].style.right = ((window.innerWidth - ($(".container").offset().left + $(".container")[0].clientWidth))+40) + "px"
+            });
 
 
 
@@ -113,8 +141,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body id="#">
+
+<?php
+include_once("../globalNav.php");
+?>
+
+
 <div id="container">
     <div class="container">
+
+
+        <div id="stickyAction">Find Group</div>
 
         <!-- START MAIN CTA AREA -->
         <div class="contain-main">
@@ -184,7 +221,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="../../../assets/js/docs.min.js"></script>
 
     <!-- THIS SCRIPT INSERST ANY ADDITIONAL TEXT YOU MAY WANT IN YOUR TWEET, CHANGE WHAT YOU WANT IN THE STATUS FIELD WITHIN kickback.php-->
-    <?php include_once('kickback.php') ?>
 
     <script type="text/javascript">
         $(document).ready(function() {
